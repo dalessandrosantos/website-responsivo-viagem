@@ -39,6 +39,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+
+    transition: .5;
+    z-index: 999;
 } 
 
 header .interface {
@@ -50,6 +53,42 @@ header .interface {
 header .logo img {
     max-width: 40px;
 }
+
+/* Estilo do menu dinâmico */
+
+header .logo img.logo-preta {
+    display: none;
+}
+
+header.rolar {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.449);
+}
+
+header.rolar .menu-desktop nav ul li a{
+    color: black;
+}
+
+header.rolar .btn-contato button {
+    border: 1px solid black;
+    color: black;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: black;
+    color: white;
+}
+
+header.rolar .logo .logo-branca {
+    display: none;
+}
+
+header.rolar .logo .logo-preta {
+    display: block;
+}
+
+/* ------------------------ */
 
 header .menu-desktop nav {
     position: relative;
