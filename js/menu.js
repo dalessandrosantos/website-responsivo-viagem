@@ -4,9 +4,9 @@ document.addEventListener("scroll", () => {
     let scrollTop = window.scrollY
 
     if(scrollTop > 0) {
-        navBar.classList.add('rolar')
+        navBar.classList.add('rolar');
     } else {
-        navBar.classList.remove('rolar')
+        navBar.classList.remove('rolar');
     }
     
-})
+});
